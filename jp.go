@@ -10,7 +10,7 @@ type ContactDetails struct {
 	favDrink2 string
 }
 
-func addContact(newContact ContactDetails) {
+func AddContact(newContact ContactDetails) {
 	conn, err := redis.Dial("tcp", "10.1.1.21:32769")
 	if err != nil {
 		// log.Fatal(err)
