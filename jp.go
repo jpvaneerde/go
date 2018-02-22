@@ -16,7 +16,7 @@ func AddContact(newContact ContactDetails) {
 		// log.Fatal(err)
 	}
 	defer conn.Close()
-	resp := conn.Cmd("HMSET", "friend:", "name", newContact.name, "Age", newContact.age, "favDrink1", newContact.favDrink1, "favDrink2", newContact.favDrink2)
+	resp := conn.Cmd("HMSET", "friend:", "name", newContact.Name, "Age", newContact.Age, "favDrink1", newContact.FavDrink1, "favDrink2", newContact.FavDrink2)
 	if resp.Err != nil {
 		// log.Fatal(resp.Err)
 	}
