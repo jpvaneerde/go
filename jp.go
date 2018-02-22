@@ -1,3 +1,5 @@
+package jp
+
 func addContact(newContact ContactDetails) {
 	conn, err := redis.Dial("tcp", "10.1.1.21:32769")
 	if err != nil {
