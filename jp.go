@@ -1,5 +1,9 @@
 package jp
 
+import ("github.com/mediocregopher/radix.v2/redis"
+	"fmt"
+       )
+
 func addContact(newContact ContactDetails) {
 	conn, err := redis.Dial("tcp", "10.1.1.21:32769")
 	if err != nil {
