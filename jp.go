@@ -20,5 +20,5 @@ func AddContact(newContact ContactDetails) {
 	if resp.Err != nil {
 		// log.Fatal(resp.Err)
 	}
-	fmt.Println(newContact.name)
+	fmt.Println(newContact.Name)
 }
