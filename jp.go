@@ -3,6 +3,12 @@ package jp
 import ("github.com/mediocregopher/radix.v2/redis"
 	"fmt"
        )
+type ContactDetails struct {
+	name      string
+	age       string
+	favDrink1 string
+	favDrink2 string
+}
 
 func addContact(newContact ContactDetails) {
 	conn, err := redis.Dial("tcp", "10.1.1.21:32769")
