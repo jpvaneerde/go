@@ -4,10 +4,10 @@ import ("github.com/mediocregopher/radix.v2/redis"
 	"fmt"
        )
 type ContactDetails struct {
-	name      string
-	age       string
-	favDrink1 string
-	favDrink2 string
+	Name      string
+	Age       string
+	FavDrink1 string
+	FavDrink2 string
 }
 
 func AddContact(newContact ContactDetails) {
